@@ -1,0 +1,9 @@
+<h1>Welcome to the Library</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <a href="/articles/<%= article.id %>">
+      <li class="article"><%= article.title %></li>
+    </a>
+  <% end %>
+</ul>
